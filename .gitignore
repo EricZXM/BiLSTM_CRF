@@ -1,1 +1,5 @@
 __pycache__/
+.idea/
+data/train_data.txt
+models/v1/*
+plots/v1/*

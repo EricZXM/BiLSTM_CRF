@@ -1,0 +1,23 @@
+import os
+
+VERSION = "v1"
+GENERAL_PATH = os.getcwd()
+
+# Paths
+DATA_PATH = GENERAL_PATH + "/data/"
+TRAIN_DATA = DATA_PATH + "train_data.txt"
+BEST_MODEL = GENERAL_PATH + "/models/%s/best_model.h5" % VERSION
+END_MODEL = GENERAL_PATH + "/models/%s/end_model.h5" % VERSION
+TOKEN_PATH = GENERAL_PATH + "/models/%s/" % VERSION
+PLT_PATH = GENERAL_PATH + "/plots/%s/" % VERSION
+
+# Parameters
+EMBEDDING_DIMENSION = 300
+BATCH_SIZE = 128
+VALIDATION_SPLIT = 0.2
+DROPOUT = 0.5
+RECURRENT_DROPOUT = 0.5
+OPTIMIZER = 'adam'
+ES_PATIENCE = 10
+RL_FACTOR = 0.8
+RL_PATIENCE = 2
