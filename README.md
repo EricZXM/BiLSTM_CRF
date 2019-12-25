@@ -1,4 +1,7 @@
-# BiLSTM_CRF
+# Named Entity Recognition (NER) Using BiLSTM + CRF
+This is a application of named entity recognition by using the model structure bidirectional LSTMs and followed by the CRF layer. \
+It does not contain the trained model and the data, since for different tasks the model needs different fields of corpus.
+
 ### Requirements
 python-version=3.7\
 packages:
@@ -33,5 +36,5 @@ RL_PATIENCE = 2
 ### Training
 run train.py
 
-### Flask service
+### Prediction & Flask service
 run service.py
